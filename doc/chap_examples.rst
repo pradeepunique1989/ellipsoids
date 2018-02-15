@@ -632,14 +632,27 @@ Defining :math:`x_1 = x, x_2=\dot{x}_1, x_3 = \theta` and :math:`x_4=\dot{x}_3`,
    0 \\
    -\frac{m_2Lg\pi}{4J_c+m_2L^2} \end{array}\right].   
 
-Consider some moment of time :math:`t_1` and final position :math:`x_1(t_1) = x_1, x_2(t_1) = 0, x_3(t_1) = \frac{\pi}{2}, x_4(t_1) = 0`. It is required to calculate the backward reachability sets (tube) for the linearized system :eq:`invpendls` emanating from the given final position and project it onto :math:`(x_1, x_3)` subspace. It is also required to identify whether it’s possible to reach the final position from a given initial position :math:`x_1(t_1) = x_1, x_2(t_1) = v_1, x_3(t_1) = \theta_1, x_4(t_1) = \omega_1` using some admissible control function.
+Consider some moment of time :math:`t_1` and final position :math:`x_1(t_1) = x^1_1, x_2(t_1) = 0, x_3(t_1) = \frac{\pi}{2}, x_4(t_1) = 0`. It is required to calculate the backward reachability sets (tube) for the linearized system :eq:`invpendls` emanating from the given final position and project it onto :math:`(x_1, x_3)` subspace. It is also required to identify whether it’s possible to reach the final position from a given initial position :math:`x_1(t_0) = x^0_1, x_2(t_0) = v_1, x_3(t_0) = \theta_1, x_4(t_0) = \omega_1` using some admissible control function.
 
-.. raw:: html
-	<h2>References</h2>
+.. literalinclude:: ../products/+elltool/+doc/+snip/s_chapter06_section05_snippet01.m
+   :language: matlab
+   :linenos:
 
-.. [SUN2003] L.Muñoz, X.Sun, R.Horowitz, and L.Alvarez. 2003. Traffic Density
-   Estimation with the Cell Transmission Model. In *Proceedings of the
-   American Control Conference*, 3750–3755. Denver, Colorado, USA.
+.. _brset:
+
+.. figure:: /pic/chapter06_section05_set1.png
+   :alt: set1
+   :width: 50 %
+
+   Backward reachability set
+
+.. _brtube:
+
+.. figure:: /pic/chapter06_section05_tube1.png
+   :alt: tube1
+   :width: 50 %
+
+   Backward reachability tube
 
 
 LMI-based three-vehicle platoon
@@ -858,7 +871,3 @@ Solving collision problem:
    robust longitudinal guidance. Proceedings of the 17th World Congress
    The International Federation of Automatic Control
    Seoul, Korea, July 6-11, 2008
-=======
-Consider some moment of time :math:`t_1` and final position :math:`x_1(t_1) = x^1_1, x_2(t_1) = 0, x_3(t_1) = \frac{\pi}{2}, x_4(t_1) = 0`. It is required to calculate the backward reachability sets (tube) for the linearized system :eq:`invpendls` emanating from the given final position and project it onto :math:`(x_1, x_3)` subspace. It is also required to identify whether it’s possible to reach the final position from a given initial position :math:`x_1(t_0) = x^0_1, x_2(t_0) = v_1, x_3(t_0) = \theta_1, x_4(t_0) = \omega_1` using some admissible control function.
-
-
