@@ -638,13 +638,20 @@ Consider some moment of time :math:`t_1` and final position :math:`x_1(t_1) = x^
    :language: matlab
    :linenos:
 
+The projection of the backward reachability set for system :eq:`invpendls`
+at :math:`t_0=0` onto :math:`(x_1,x_3)`
+subspace is given in :num:`figure #brset`,
+and the corresponding projection of the backward reachability tube evolving
+from :math:`t_1=1` to :math:`t_0=0` is shown
+in :num:`figure #brtube`.
+
 .. _brset:
 
 .. figure:: /pic/chapter06_section05_set1.png
    :alt: set1
    :width: 50 %
 
-   Backward reachability set
+   Projection of the backward reachability set
 
 .. _brtube:
 
@@ -652,7 +659,7 @@ Consider some moment of time :math:`t_1` and final position :math:`x_1(t_1) = x^
    :alt: tube1
    :width: 50 %
 
-   Backward reachability tube
+   Projection of the backward reachability tube
 
 
 LMI-based three-vehicle platoon
